@@ -24,7 +24,7 @@ const Navbar = () => {
                {/* sidebar logo  */}
                <div className="sidebar_logo">
                   <BiIcons.BiCarousel />
-                  <span className="logo_name">FancyBar</span>
+                  <span className="logo_name">BlackPepper</span>
                </div>
                <IconContext.Provider value={{ color: "#fff", size: "2rem" }}>
                   {/* slick sidebar container  */}
@@ -42,13 +42,15 @@ const Navbar = () => {
                      <div className="profile_name">Ariful Hasan</div>
                      <div className="job">Web Developer</div>
                   </div>
-                  <BiIcons.BiLogOut
-                     style={{
-                        width: "2rem",
-                        marginRight: "0.7rem",
-                        cursor: "pointer",
-                     }}
-                  />
+                  <div className="logout_icon">
+                     <BiIcons.BiLogOut
+                        style={{
+                           width: "2rem",
+                           marginRight: "0.7rem",
+                           cursor: "pointer",
+                        }}
+                     />
+                  </div>
                </div>
             </nav>
          </IconContext.Provider>

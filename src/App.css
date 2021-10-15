@@ -1,11 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root {
+   --font_rob: "Roboto", sans-serif;
+   --font_pop: "Poppins", sans-serif;
    --sidebar_bg: #11101d;
    --gray: #a4b2bc;
    --white: #fff;
    --content_bg: #e4e9f7;
    --light_dark: #1b1b31;
+   --green: #27ae60;
+   --black: #192a56;
+   --light-color: #666;
+   --fade-white: #eee;
+   --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
 }
 
 *,
@@ -14,8 +21,9 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: "Poppins", sans-serif;
+   font-family: var(--font_rob);
    scroll-behavior: smooth;
+   overflow-x: hidden;
 }
 html {
    font-size: 62.5%;
@@ -26,15 +34,20 @@ a {
 .icon_color {
    color: red;
 }
+.header,
 .home_section,
 .dashboard_section {
    position: relative;
-   background: var(--content_bg);
    left: calc(200px + 2vw);
    width: calc(100% - (200px + 2vw));
    transition: all 0.3s ease;
+}
+
+.home_section,
+.dashboard_section {
    height: 120vh;
 }
+.sidebar.close ~ .header,
 .sidebar.close ~ .home_section,
 .sidebar.close ~ .dashboard_section {
    left: 78px;
