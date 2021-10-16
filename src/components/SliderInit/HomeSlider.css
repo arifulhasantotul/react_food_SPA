@@ -1,0 +1,35 @@
+.home_slider .slide {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 2rem;
+   padding-top: 9rem;
+}
+
+.home_slider .slide .content {
+   flex: 1 1 45rem;
+}
+
+.home_slider .slide .image {
+   flex: 1 1 45rem;
+}
+
+.home_slider .slide .image img {
+   width: 100%;
+}
+
+.home_slider .slide .content span {
+   color: var(--green);
+   font-size: 2.5rem;
+}
+.home_slider .slide .content p {
+   color: var(--light-color);
+   font-size: 2rem;
+   padding: 0.5rem 0;
+   line-height: 1.5;
+}
+
+.home_slider .slide .content h3 {
+   color: var(--black);
+   font-size: 7rem;
+}

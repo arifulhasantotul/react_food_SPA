@@ -23,7 +23,7 @@
    box-sizing: border-box;
    font-family: var(--font_rob);
    scroll-behavior: smooth;
-   overflow-x: hidden;
+   /* overflow-x: hidden; */
 }
 html {
    font-size: 62.5%;
@@ -31,25 +31,16 @@ html {
 a {
    text-decoration: none;
 }
-.icon_color {
-   color: red;
+li {
+   list-style: none;
 }
-.header,
-.home_section,
-.dashboard_section {
+.header {
    position: relative;
-   left: calc(200px + 2vw);
-   width: calc(100% - (200px + 2vw));
+   left: 220px;
+   max-width: calc(100% - 220px);
    transition: all 0.3s ease;
 }
-
-.home_section,
-.dashboard_section {
-   height: 120vh;
-}
-.sidebar.close ~ .header,
-.sidebar.close ~ .home_section,
-.sidebar.close ~ .dashboard_section {
+.sidebar.close ~ .header {
    left: 78px;
-   width: calc(100% - 78px);
+   max-width: calc(100% - 78px);
 }

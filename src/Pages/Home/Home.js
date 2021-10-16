@@ -1,11 +1,12 @@
+import { Container } from "@mui/material";
 import React from "react";
 import HomeSlider from "../../components/SliderInit/HomeSlider";
 
 const Home = () => {
    return (
-      <section className="home_section">
+      <Container>
          <HomeSlider></HomeSlider>
-      </section>
+      </Container>
    );
 };
 

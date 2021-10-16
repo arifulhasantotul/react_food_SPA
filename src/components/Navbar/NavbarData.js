@@ -11,7 +11,7 @@ export const SidebarData = [
       title: "Home",
       tClass: "nav_link",
       path: "/home",
-      icon: <BiIcons.BiHome className="icon_color" />,
+      icon: <BiIcons.BiHome />,
    },
    {
       id: 2,
